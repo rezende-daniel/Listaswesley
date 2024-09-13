@@ -6,7 +6,7 @@ class Exercicio2 {
         
         int anoAtual;
         int anoNascimento;
-        int anoDoUsuario;
+        
 
         
         anoAtual = Integer.parseInt(JOptionPane.showInputDialog(null,"Insira o ano atual: "));
