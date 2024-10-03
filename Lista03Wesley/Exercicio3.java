@@ -4,12 +4,12 @@ public class Exercicio3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        
+        // Variáveis para armazenar a quantidade de pessoas assistindo cada canal
         int[] audienciaCanais = new int[5]; // Canais 2, 4, 5, 7, 12
         int totalPessoas = 0;
 
         while (true) {
-           
+            // Solicita o número do canal
             System.out.print("Informe o número do canal (2, 4, 5, 7, 12 ou 0 para encerrar): ");
             int canal = input.nextInt();
 
@@ -19,7 +19,7 @@ public class Exercicio3 {
 
             // Verifica se o canal informado é válido
             if (canal == 2 || canal == 4 || canal == 5 || canal == 7 || canal == 12) {
-                
+                // Solicita o número de pessoas assistindo ao canal
                 System.out.print("Informe o número de pessoas assistindo ao canal: ");
                 int pessoas = input.nextInt();
 
@@ -39,7 +39,7 @@ public class Exercicio3 {
             }
         }
 
-      
+        // Calcula e exibe o percentual de audiência de cada canal
         if (totalPessoas > 0) {
             System.out.println("Percentual de audiência por canal:");
             System.out.printf("Canal 2: %.2f%%\n", (audienciaCanais[0] * 100.0) / totalPessoas);
