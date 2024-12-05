@@ -1,0 +1,351 @@
+O que é o Java Swi
+O Swing é umaClasses de base Java (JFC)que
+
+Características principais
+Plataforma independente : O
+Componente base : SJButton, JTextField,JLabel,
+Desenho e aparência : O
+Exem
+A seguir, apresentamos um exemplo simples de uma aplicação gráfica usando Swing:
+
+import javax.swing.*;
+import java.awt.event.*;
+
+public class ExemploSwing {
+    
+public static void main(String[] args) {        
+
+      
+JFrame frame = new JFrame("Exemplo Swing");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.set
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+   
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_O
+
+        frame.setDefaultCloseOperation(JFrame
+
+        frame.setDefaultClos
+
+        frame.setDefau
+
+        frame.se
+
+        f
+
+ 
+300, 200);
+
+        
+
+  
+        
+        JButton
+JButton button = new JButton("Clique aqui!");
+        
+        
+       
+
+ 
+        button.addActionListener(
+        button.addAction
+
+        button.add
+
+        but
+
+    
+new ActionListener() {
+            
+            pu
+
+         
+
+   
+public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(frame, 
+                JOptionPane.showMessageDialog(fram
+
+                JOptionPane.showMessageDia
+
+                JOptionPane.showMe
+
+                JOptionPane.sh
+
+                JOptionPan
+
+                JOpti
+
+                
+
+          
+"Você clicou no botão!");
+            }
+        });
+
+        
+            }
+        });
+
+     
+
+            }
+        });
+
+            }
+   
+
+        
+        frame.add(button);
+        
+        
+        frame.add(button);
+        
+     
+
+        frame.add(button);
+        
+
+        frame.add(button);
+  
+
+        frame.add(butt
+
+        frame.
+
+      
+        frame.setVisible(
+        frame.setVisible(t
+
+        frame.setVisib
+
+        frame.set
+
+      
+
+  
+true);
+    }
+}
+
+    
+
+ 
+Neste exemplo, criamos uma janela ( JFrame)JButton). AoJOptionPane.
+
+O que é
+O JavaFX é
+
+Caracter
+Animações e efeitos gráficos: Ó Jav
+Controles modernos : O
+Suporte a CSS : O JavaFX
+Suporte a mídia:Japão
+Ex
+UM
+
+Java
+
+Copiar código
+import javafx.application.Application;
+
+impor
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+
+impor
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+public class ExemploJavaFX extends Application {
+    @Override
+    
+    pu
+public void start(Stage primaryStage) {
+        
+        
+
+  
+        
+        Button bt
+
+        But
+
+    
+Button btn = new Button("Clique aqui!");
+        
+        
+        
+     
+
+        
+
+  
+        btn.setOnAction(e -> {
+            System.out.println(
+        btn.setOnAction(e -> {
+            System.out.println
+
+        btn.setOnAction(e -> {
+            System.out.p
+
+        btn.setOnAction(e -> {
+            Syste
+
+        btn.setOnAction(e -> {
+          
+
+        btn.setOnAction(e ->
+
+        btn.setOnActio
+
+        btn.set
+
+        
+"Você clicou no botão!");
+        });
+
+        
+        });
+
+    
+
+        })
+
+  
+        
+        StackPane ro
+
+        Stac
+
+   
+StackPane root = new StackPane();
+        root.getChildren().add(btn);
+
+        
+        root.getChildren().add(btn);
+
+     
+
+        root.getChildren().add(btn);
+
+        root.getChildren().add
+
+        root.getChildr
+
+   
+        
+        Sc
+
+     
+Scene scene = new Scene(root, 300, 250);
+
+        
+
+    
+        primaryStage.setTitle(
+        primaryStage.setTitle
+
+        primaryStage.set
+
+        primarySta
+
+        prim
+
+     
+"Exemplo JavaFX");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    publ
+
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    
+
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+        primaryStage.setScene(scene);
+        primaryStage.show();
+ 
+
+        primaryStage.setScene(scene);
+        primaryStage.sho
+
+        primaryStage.setScene(scene);
+        primarySt
+
+        primaryStage.setScene(scene);
+       
+
+        primaryStage.setScene(scene);
+    
+
+        primaryStage.setScene(scene);
+
+        primaryStage.setScene(scen
+
+        primaryStage.setScene(
+
+        primaryStage
+
+        primarySt
+
+        primar
+
+        pri
+
+        
+
+    
+public static void main(String[] args) {
+        launch(args);
+    }
+}
+
+        launch(args);
+  
+
+        launch(arg
+
+   
+Neste exemplo, criamos uma janela com um botão. Quando o botão é clicado, aparece a mensagem "Você clicou no botão!" é exibido no console. A principal diferença aqui é o uso de classes específicas do JavaFX, comoButton, `EstaStageeScene.
+
+Comparação entre Swin
+Caracteristica	Java Swing	JavaFX
+Aparência e Tema	Base	Interface
+Componentes Gráficos	Completo	Mais f
+Animações e Efeitos	Eu	Suporte
+Integração com CSS	Não seu	E aí
+Desempenho	M	Meu
+Facilidade de Uso	Fácil de	Mais m
+Concentração
+Ambas as bibliotecas, Swing e JavaFX , têmSwing é umaJavaFX é uma opção
+
+Se for necessário apenas criar interfaces simples e funcionais, o Swing pode ser uma boa escolha, pois é mais fácil de aprender. Porém, se a aplicação exige interfaces mais ricas, com animações e controles modernos, o JavaFX é o melhor do
+
+Referências
+Documentação do Oracle JavaFX: https :
+Documentação do Oracle Swing: https :
